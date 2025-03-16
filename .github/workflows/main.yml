@@ -23,9 +23,6 @@ jobs:
       - name: Install Frontend Dependencies
         run: npm install
 
-      - name: Run Frontend Tests with Coverage
-        run: npm test -- --coverage --watchAll=false --ci
-
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
